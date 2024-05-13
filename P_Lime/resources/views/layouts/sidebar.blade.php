@@ -7,8 +7,19 @@
             <li>
                 <a href="{{asset('/home')}}" class="active"><i class="material-icons">dashboard</i>Dashboard</a>
             </li>
-            <li>
-                <a href="profile.html"><i class="material-icons">person_outline</i>Laporan</a>
+            {{-- <li>
+                <a href="{{ route('laporan.index') }}"><i class="material-icons">person_outline</i>Laporan</a>
+            </li> --}}
+            <li class="page">
+                <a href="#"><i class="material-icons">person_outline</i>Laporan<i class="material-icons has-sub-menu">keyboard_arrow_left</i></a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="{{ route('laporan.create') }}">Membuat Laporan</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('acara.view') }}">Tracking Laporan</a>
+                    </li>
+                </ul>
             </li>
 
             <li class="page">

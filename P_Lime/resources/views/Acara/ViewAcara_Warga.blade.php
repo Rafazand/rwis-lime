@@ -146,9 +146,13 @@
                                                         <p class="card-text"><small class="text-muted">{{ $d->tanggal_penyelenggaraan }}</small></p>
                                                     </div>
                                                 </div>
+                                                
+                                                <a href="" class="btn btn-primary">Detail</a>
                                                 @endif
                                                 @endforeach
+
                                             </div>
+                                            
 
                                             <div role="tabpanel" class="tab-pane fade" id="Informasi">
                                                 @foreach ($data as $d)
